@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifItem/> Debe de coincidir el snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="trump foto"
+      src="https://media0.giphy.com/media/l2JhIUyUs8KDCCf3W/giphy.gif?cid=41f37cafudkv0fnfq1lg7mi6c6bwic4xnlq8ujpaiqi74cjz&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+    />
+    <p>
+      trump foto
+    </p>
+  </div>
+</div>
+`;

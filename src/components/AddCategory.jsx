@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import PropTypes from 'prop-types';
 
 export const AddCategory = ({ onNewCategory }) => {
     
@@ -12,6 +12,7 @@ export const AddCategory = ({ onNewCategory }) => {
 
     //función que envía lo que escribimos en el formulario y actualiza el listado
     const onSubmit = ( event ) => {
+        
         event.preventDefault();//evita que  la página se recargue y que el formulario no se envíe para poder validar los datos del formulario.
         const newInputValue = inputValue.trim()
         //1ª validación:
@@ -27,7 +28,7 @@ export const AddCategory = ({ onNewCategory }) => {
     }
 
   return (
-    <form  onSubmit = { onSubmit }> 
+    <form  onSubmit = { onSubmit } aria-label = "form" > 
          
         <input
             type = "text"
@@ -41,4 +42,9 @@ export const AddCategory = ({ onNewCategory }) => {
    // el form hace un refresco de la web al pulsar enter
    
   )
+}
+
+
+AddCategory.propTypes = {
+    onNewCategory: PropTypes.func.isRequired,
 }
